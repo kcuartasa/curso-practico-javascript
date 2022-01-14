@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+    </header>
+    
+    <section>
+        <h2> Calcula el precio a pagar de tus productos con descuento</h2>
+
+        <form>
+
+            <div>
+                <label for="InputPrice">Precio del producto</label>
+                <input type="number" id="InputPrice" placeholder="Ingresa el precio de tu producto">
+            </div>
+
+            <div>
+                <label for="InputDiscount"> Descuento del producto</label>
+                <input type="number" id="InputDiscount" placeholder="Ingresa el descuento de tu producto">
+            </div>
+
+            <div>
+                <label for="">Cupones disponibles</label>
+                <select multiple name="nameCoupon" id="cupons">
+                    <option id="dsi" value="20"> Dia sin IVA</option>
+                    <option id="blackFriday" value="15"> Black Friday</option>
+                    <option id="juevesOnline" value="10"> Jueves Online</option>
+                    <option id="aniversario" value="5"> Aniversario</option>
+                    <option id="sinCupon" value="0"> No tengo cupon</option>
+                </select>
+            </div>
+
+            <div>
+            <button type="button" onclick="buttonPriceDiscount()">Calcular precio con descuento</button>
+            </div>
+
+            <div>
+                <p id="ResultCoupon"></p>
+            </div>
+
+            <div>
+            <p id="ResultPrice"></p>
+            </div>
+        </form>
+    </section>
+    
+    <script src="./descuentos.js"></script>
+</body>
+</html>
